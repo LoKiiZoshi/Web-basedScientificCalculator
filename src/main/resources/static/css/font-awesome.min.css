@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-form {
+    background-color: #ffccff; /* Light pink for the form background */
+    padding: 40px;  /* Increased padding for a larger form */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Larger shadow */
+    width: 500px; /* Increased width */
+    max-width: 90%; /* Ensure responsiveness */
+}
+
+.signup-form h2 {
+    margin-bottom: 30px;
+    font-size: 28px; /* Larger font size for the heading */
+    color: #e60073; /* Dark pink for the heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Larger spacing between form fields */
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #ff007f; /* Bold pink labels */
+    font-size: 18px; /* Larger label font */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px; /* Increased padding for inputs */
+    margin-top: 8px;
+    border: 1px solid #e60073; /* Dark pink border for inputs */
+    border-radius: 6px;
+    font-size: 16px; /* Larger input font */
+}
+
+.form-group button {
+    width: 100%;
+    padding: 15px; /* Larger button */
+    background-color: #ff007f; /* Bright pink button */
+    color: #fff; /* White text for the button */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px; /* Larger button font */
+}
+
+.form-group button:hover {
+    background-color: #e60073; /* Darker pink on hover */
+}
+
+/* Style for the 'Already signed in?' message */
+.login-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-message a {
+    color: #ff007f; /* Pink link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-message a:hover {
+    text-decoration: underline;
+}
+
+
+

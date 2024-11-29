@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Header */
+.navbar-header {
+    background-color: #ff4081; /* Attractive pink */
+    padding: 50px 0; /* Increase padding to make the navbar larger */
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px; /* Wider max width for larger screen sizes */
+    margin: 0 auto;
+    padding: 0 40px; /* Increased padding for breathing room */
+}
+
+/* Navigation Menu */
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased gap between menu items */
+}
+
+.navbar-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Increase font size for menu items */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu ul li a:hover {
+    color: #ffe082; /* Hover color */
+}
+
+/* Call to Action Buttons */
+.navbar-cta .btn {
+    text-decoration: none;
+    color: #ff4081;
+    background-color: white;
+    padding: 10px 20px; /* Increased padding for buttons */
+    border-radius: 5px;
+    margin-left: 20px; /* More spacing between buttons */
+    font-weight: bold;
+    font-size: 16px; /* Increase button font size */
+}
+
+.navbar-cta .signup-btn {
+    background-color: #d32f2f; /* Signup Button - Dark Red */
+    color: white;
+}
+
+.navbar-cta .btn:hover {
+    opacity: 0.9;
+}
+
+/* Mobile Responsive */
+#menu-toggle {
+    display: none;
+}
+
+.navbar-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    width: 35px; /* Slightly larger hamburger icon */
+}
+
+.navbar-icon span {
+    display: block;
+    width: 100%;
+    height: 4px; /* Slightly thicker hamburger lines */
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        position: absolute;
+        top: 80px; /* Adjust position for the larger navbar */
+        left: 0;
+        width: 100%;
+        background-color: #ff4081;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Slightly larger gap between menu items */
+        padding: 30px 0; /* More padding for mobile menu */
+    }
+
+    /* Toggle Menu for Mobile */
+    #menu-toggle:checked + .navbar-icon + .navbar-menu {
+        transform: translateY(0);
+    }
+
+    .navbar-icon {
+        display: flex;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff4081; /* Bright pink background */
+    padding: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-content div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p, li a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
